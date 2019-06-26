@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#E2DFA2"
+tools:context="com.greenteam.otty.SecondActivity"
+tools:layout_editor_absoluteY="25dp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer = "false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:text="Data Analysis"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#ED5752"/>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView28"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:text="The analysis shown are based on the number of entries you provided from your selected date range."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#A99F3C"
+            android:textStyle="bold"
+            android:fontFamily="@font/gravity_light"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView29"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/legends" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="18dp"
+            android:text="Tantrums"
+            android:textSize="18sp"
+            android:textColor="#ED5752"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_tantrums"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:layout_below="@id/textView30" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/progressBar_tantrums"
+            android:layout_marginTop="18dp"
+            android:text="Self-Injurious Behavior"
+            android:textSize="18sp"
+            android:textColor="#ED5752"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_sib"
+            android:layout_below="@id/textView31"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_below="@+id/progressBar_sib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:text="Self-Stimulating Behavior"
+            android:textSize="18sp"
+            android:textColor="#ED5752"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_ssb"
+            android:layout_below="@id/textView32"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_below="@+id/progressBar_ssb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:text="Hand-Leading"
+            android:textSize="18sp"
+            android:textColor="#ED5752"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_hl"
+            android:layout_below="@id/textView33"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_below="@+id/progressBar_hl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:text="Poor Waiting"
+            android:textSize="18sp"
+            android:textColor="#ED5752"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_pw"
+            android:layout_below="@id/textView34"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_below="@+id/progressBar_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:text="textview"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#3ca0a9"
+            android:fontFamily="@font/gravity_light"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

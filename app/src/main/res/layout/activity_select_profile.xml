@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2DFA2"
+    tools:context="com.greenteam.otty.select_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer = "false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/logosplash" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/gravity_light"
+                android:text="Select child to be evaluated from the dropdown list below"
+                android:textColor="#ED5752"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/imageView"
+                android:textAlignment="center"/>
+
+            <Spinner
+                android:id="@+id/spn_profiles"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#A99F3C"
+                android:layout_below="@id/textView10" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gravity_light"
+                android:text="or:"
+                android:textColor="#ED5752"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/spn_profiles"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_AddProfile"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_custom"
+                android:fontFamily="@font/gravity_light"
+                android:text="CREATE NEW PROFILE"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_below="@id/textView11"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gravity_light"
+                android:text="and"
+                android:textColor="#ED5752"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/btn_AddProfile"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_Start"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_custom"
+                android:fontFamily="@font/gravity_light"
+                android:text="Start Evaluating"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_below="@id/textView12"
+                android:textSize="16dp"/>
+        </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

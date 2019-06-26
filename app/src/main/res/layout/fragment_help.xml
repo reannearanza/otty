@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:background="#E2DFA2"
+    android:layout_height="match_parent"
+    tools:context="com.greenteam.otty.helpActivity$PlaceholderFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer = "false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:text="How to Use OTTY"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#ED5752"/>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.) Select Profile"
+                android:layout_below="@id/textView40"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#ED5752"/>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/select_profile"
+                android:layout_below="@id/textView41"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#A99F3C"/>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2.) Add an Entry"
+                android:layout_below="@id/textView42"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#ED5752"/>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/add_entry"
+                android:layout_below="@id/textView43"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#A99F3C"/>
+
+            <SeekBar
+                android:id="@+id/seekbar_help"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView44"
+                android:layout_marginTop="13dp"
+                android:max="3"
+                android:progress="0"
+                android:thumb="@mipmap/nipple" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekbar_help"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/labels" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.) Analyze Entries"
+                android:layout_below="@id/imageView3"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#ED5752"/>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/analyze_entries"
+                android:layout_below="@id/textView45"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:fontFamily="@font/gravity_light"
+                android:textStyle="bold"
+                android:textColor="#A99F3C"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView46"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/legends" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
